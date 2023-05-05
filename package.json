@@ -1,0 +1,19 @@
+{
+  "name": "app_geolili",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./login.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yuilsi",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.21.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  }
+}
