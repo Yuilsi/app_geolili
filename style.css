@@ -3,16 +3,16 @@ html{
     font-size: 100%;
 }
 
-*, *::before, * ::after{
-box-sizing: inherit;
-}
 
-body{
-    margin:0;
-    padding: 0;
-    
-}
-
-#map {
-height: 60vh;
-}
+.option {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .option:hover {
+    background-color: lightgray;
+  }
+  
+  .button {
+    color: blue;
+  }

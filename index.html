@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geolili</title>
     <link rel="stylesheet" href="style.css">
+    <title>Geolili</title>
+    
     <nav>
-       <button>Home</button>
+       <button class="button">Home</button>
+       <title></title>
     </nav>
-
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3w-9arPb-pUcXhkfqj4QWjqrvx_LbPYg&map_ids=b44a86ae07e6179a&callback=initMap" async defer></script>
 </head>
 <body>
+
+     <!-- barra de busqueda -->
+     <input type="text" id="search-bar" oninput="showOptions(this.value)">
+     <div id="options-container"></div>
+     
 
 <script src="map.js"></script>
 
