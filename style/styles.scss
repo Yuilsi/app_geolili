@@ -1,0 +1,57 @@
+// Variables
+$backgroundColor: #b91515;
+$borderColor: #af1111;
+$hoverColor: #060a33;
+
+$color-fondo-menu: #333;
+$color-texto-botones: white;
+$color-hover-botones: #555;
+
+
+// Estilos para la barra de búsqueda y sugerencias
+#suggestions {
+  display: none;
+  background: $backgroundColor;
+  border: 1px solid $borderColor;
+  max-width: 200px;
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    padding: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background: $hoverColor;
+    }
+  }
+}
+
+// Estilos para el menú completo
+.menu {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-fondo-menu;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+  }
+
+  &__button {
+    border: none;
+    background: none;
+    color: $color-texto-botones;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $color-hover-botones;
+    }
+  }
+}
