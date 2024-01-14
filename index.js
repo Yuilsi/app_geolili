@@ -68,24 +68,9 @@ const suggestions = [
     suggestionsContainer.style.display = 'none';
   }
 
-//MENU
-  // Manejo de eventos de los botones del menú inferior
-document.getElementById('homeBtn').addEventListener('click', function() {
-    // Aquí podrías programar lo que sucede al hacer clic en "Home"
-    console.log('Clic en Home');
-    // Por ejemplo, cambiar el contenido principal
-    document.querySelector('.main-content h1').innerText = 'Página de Inicio';
-  });
   
-  document.getElementById('mapBtn').addEventListener('click', function() {
-    // Aquí podrías programar lo que sucede al hacer clic en "Map"
-    console.log('Clic en Map');
-    // Por ejemplo, cambiar el contenido principal
-    document.querySelector('.main-content h1').innerText = 'Mapa';
-  });
+ 
   
-  document.getElementById('profileBtn').addEventListener('click', function() {
-    window.location.href = 'profile.html';
-  });
-  
+ 
+
   

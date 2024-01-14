@@ -7,6 +7,78 @@ $color-fondo-menu: #333;
 $color-texto-botones: white;
 $color-hover-botones: #555;
 
+$neutral-white: #F2F2F2;
+
+// Importa la fuente 'Inter' desde Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+// Define una variable para la fuente principal
+$font-inter: 'Inter', sans-serif;
+// Establece la fuente para el elemento body
+body {
+  font-family: $font-inter;
+}
+
+
+.container {
+  position: relative; /* Agregado */
+  width: 434.431px;
+  height: 400.598px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 43px 43px;
+  background: var(--Neutral-white_pure, #FFF);
+  box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.06);
+
+  &__notification {
+    position: absolute; /* Cambiado de absolute a absolute */
+    right: 20px; /* Ajusta el valor según sea necesario, utilizando 'px' */
+    top: 0px; /* Ajusta el valor según sea necesario, utilizando 'px' */
+    width: 24px;
+    height: 54px;
+  }
+
+  &__tittle {
+    margin-top: 70px;
+    color: var(--Gray-900, #212121);
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32.52px; /* 101.625% */
+    
+    /* Estilos para la segunda parte del texto (color gris) */
+    br {
+      color: var(--Gray-500, #626262);
+      font-family: Inter;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 32.52px;
+    }
+
+
+  } 
+}
+
+
+
+.containerSearch {
+  display: flex;
+  width: 380px;
+  height: 47px;
+  padding: 8px 20px;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+
+  border-radius: 48px;
+  background: var(--Neutral-White, #{$neutral-white});
+}
+
+.containerSearch__lupa {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
 
 // Estilos para la barra de búsqueda y sugerencias
 #suggestions {
@@ -30,28 +102,6 @@ $color-hover-botones: #555;
   }
 }
 
+
+
 // Estilos para el menú completo
-.menu {
-  &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: $color-fondo-menu;
-    padding: 10px 0;
-    font-family: Arial, sans-serif;
-  }
-
-  &__button {
-    border: none;
-    background: none;
-    color: $color-texto-botones;
-    font-size: 16px;
-    cursor: pointer;
-    padding: 8px 16px;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: $color-hover-botones;
-    }
-  }
-}

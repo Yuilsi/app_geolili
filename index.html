@@ -4,29 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link rel="stylesheet" href="./style/styles.css">
     <title>Geolili</title>  
 </head>
 <body>
 
+  <div class="frameHome">
     <div class="container">
-         <!-- Contenido principal -->
-     <input type="text" id="searchInput" placeholder="Buscar...">
-     <div id="suggestions"></div>
 
-     <div class="main-content">
-        <!-- Aquí va el contenido principal de tu aplicación -->
-        <h1>Hola Juan,<br>¿A dónde vamos hoy?</h1>
+      <div class="container__notification" ><svg    xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+        <path d="M5.82474 14.1321L5.09976 13.4434L5.82474 14.1321ZM8 9.19812C8 6.98898 9.79086 5.19812 12 5.19812V3.19812C8.68629 3.19812 6 5.88441 6 9.19812H8ZM8 11.9545V9.19812H6V11.9545H8ZM6 16.1981C6 15.6639 6.20812 15.1805 6.54971 14.8209L5.09976 13.4434C4.41915 14.1598 4 15.1311 4 16.1981H6ZM7 16.1981H6V18.1981H7V16.1981ZM17 16.1981H7V18.1981H17V16.1981ZM18 16.1981H17V18.1981H18V16.1981ZM17.4503 14.8209C17.7919 15.1805 18 15.6639 18 16.1981H20C20 15.1311 19.5809 14.1598 18.9002 13.4434L17.4503 14.8209ZM16 9.19812V11.9545H18V9.19812H16ZM12 5.19812C14.2091 5.19812 16 6.98898 16 9.19812H18C18 5.88441 15.3137 3.19812 12 3.19812V5.19812ZM18.9002 13.4434C18.2923 12.8035 18 12.3561 18 11.9545H16C16 13.2482 16.8905 14.2317 17.4503 14.8209L18.9002 13.4434ZM4 16.1981C4 17.3027 4.89543 18.1981 6 18.1981V16.1981H4ZM18 18.1981C19.1046 18.1981 20 17.3027 20 16.1981H18V18.1981ZM6 11.9545C6 12.3561 5.70766 12.8035 5.09976 13.4434L6.54971 14.8209C7.10947 14.2317 8 13.2482 8 11.9545H6Z" fill="#10CE85"/>
+        <path d="M13.7976 20.0749C13.6312 20.416 13.3712 20.7027 13.048 20.9016C12.7247 21.1004 12.3516 21.2032 11.9721 21.1979C11.5926 21.1926 11.2224 21.0795 10.9049 20.8716C10.5873 20.6638 10.3354 20.37 10.1786 20.0243" stroke="#10CE85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12 3.19812V4.19812" stroke="#10CE85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
       </div>
+         <!-- Contenido principal -->
+         
+          <!-- Aquí va el contenido principal de tu aplicación -->
+            <h1 class="container__tittle">Hola Juan,<br>¿A dónde vamos hoy?</h1>
+        </div>
+
+         <div class="containerSearch">
+          <svg class="containerSearch__lupa"
+           xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+            <circle cx="10" cy="10.5" r="6" stroke="#626262" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14.5 15L19 19.5" stroke="#626262" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <input class="containerSearch__text" id="searchInput" placeholder="Buscar...">
+          <div id="suggestions"></div>
+
+
+         </div>
+
+     
+
+
+
        <!-- Menú inferior -->
-    <nav class="bottom-menu">
-        <button id="homeBtn">Home</button>
-        <button id="mapBtn">Map</button>
-        <button id="profileBtn">Profile</button>
+    <nav class="menu">
+      <a class="menu__home"   href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M5.77778 10.2222V18C5.77778 19.1046 6.67321 20 7.77778 20H12M5.77778 10.2222L11.2929 4.70711C11.6834 4.31658 12.3166 4.31658 12.7071 4.70711L17.5 9.5M5.77778 10.2222L4 12M18.2222 10.2222V18C18.2222 19.1046 17.3268 20 16.2222 20H12M18.2222 10.2222L20 12M18.2222 10.2222L17.5 9.5M17.5 9.5V6M12 20V15" stroke="#10CE85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></a>
+      <a class="menu__map" chref="">no</a>
+      <a class="menu__profile" chref="profile.html">ir</a>
       </nav>
     
 
     </div>
+
+  </div>
+
+    
     
 <script src="index.js"></script>
 </body>
